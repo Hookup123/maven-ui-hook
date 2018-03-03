@@ -13,5 +13,6 @@ node {
        sh 'echo "$PATH = ${PATH}"'
        sh 'echo "$M2_HOME = ${M2_HOME}"'
        echo "PATH is: $PATH"
+       sh 'mvn --version'
    }
    }
