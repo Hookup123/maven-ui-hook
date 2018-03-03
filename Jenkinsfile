@@ -4,8 +4,13 @@ node {
      git 'https://github.com/Cenovus123/maven-ui-hook.git'
      checkout scm
    }
-   tools{
-        maven 'maven 3.5'
-        jdk 'jdk1.8'
-        }
+   stage('Build Test & Package') {
+      echo 'Build the package'
+      steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' 
+            }
+   }
    }
