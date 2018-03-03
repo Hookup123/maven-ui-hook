@@ -20,6 +20,7 @@ node {
    }
       stage('Test Automation'){
        echo 'Deploy to Dev environment'
+       echo 'POLL will work'
    }
    
 }
