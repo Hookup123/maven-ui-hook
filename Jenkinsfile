@@ -1,7 +1,7 @@
 node {
     environment {
-    JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/"
-    PATH =/opt/maven/bin:$PATH
+    JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
+    PATH ="/opt/maven/bin:$PATH"
   }
     stage('Git Checkout') { // for display purposes
      echo 'Checout Code and clone it inside jenkins workspace..'
