@@ -19,18 +19,4 @@ node {
       echo 'Build the package'
       echo 'mvn clean compile package'
    }
-   stage('Results') {
-       echo 'Test Results are reported..'
-   
    }
-   stage('Deploy to Dev'){
-       echo 'Deploy to Dev environment'
-   }
-   stage('Deploy to Test'){
-       echo 'Deploy to Test environment'
-   }
-      stage('Test Automation'){
-       echo 'Deploy to Dev environment'
-   }
-   
-}
