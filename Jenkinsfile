@@ -8,15 +8,4 @@ node {
         maven 'maven 3.5'
         jdk 'jdk1.8'
         }
-    stage ("initialize") {
-            steps {
-                    sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-     }               '''
-    }
-   stage('Build Test & Package') {
-      echo 'Build the package'
-      echo 'mvn clean compile package'
-   }
    }
