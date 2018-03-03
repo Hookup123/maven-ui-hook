@@ -14,6 +14,6 @@ node {
        sh 'echo "$M2_HOME = ${M2_HOME}"'
        echo "PATH is: $PATH"
        sh 'mvn --version'
-       sh 'mvn clean install'
+       sh 'mvn clean compile package'
    }
    }
