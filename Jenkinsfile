@@ -8,6 +8,6 @@ node {
       echo 'Build the package'
        sh 'echo "$PATH = ${PATH}"'
        sh 'echo "$M2_HOME = ${M2_HOME}"'
-       sh 'echo pwd'
+       sh 'pwd'
    }
    }
