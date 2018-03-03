@@ -6,7 +6,7 @@ node {
    }
    stage('Build Test & Package') {
       echo 'Build the package'
-                sh 'echo $PATH'
-                sh 'echo $M2_HOME'
+       sh 'echo "$PATH = ${PATH}"'
+       sh 'echo "$M2_HOME = ${M2_HOME}"'
    }
    }
