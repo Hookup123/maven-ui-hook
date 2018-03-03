@@ -6,6 +6,7 @@ node {
    }
    stage('Build Test & Package') {
       echo 'Build the package'
+      echo 'this will run now'
       sh 'mvn clean compile package'
    }
    stage('Results') {
